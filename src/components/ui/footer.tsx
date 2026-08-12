@@ -7,7 +7,6 @@ import {
   WHATSAPP_DISPLAY,
   waLink,
 } from "@/lib/contact";
-import { LOGO_DATA_URI } from "@/lib/logo";
 
 const footerLinks = [
   { name: "Kenya", href: "#kenya" },
@@ -26,11 +25,10 @@ export function Footer() {
           <Link href="/" className="flex items-center">
             <span className="relative h-16 w-auto overflow-hidden">
               <Image
-                src={LOGO_DATA_URI}
+                src="/automatex-logo.png"
                 alt="AutomateX"
                 width={220}
                 height={42}
-                unoptimized
                 className="w-auto h-full object-contain"
               />
             </span>
