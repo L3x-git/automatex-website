@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
-import { LOGO_DATA_URI } from "@/lib/logo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,12 +24,7 @@ export const metadata: Metadata = {
   description:
     "AutomateX builds AI chatbots for your website and social media, WhatsApp auto-responders, voice agents, and done-for-you websites for businesses in Kenya and the US. No fluff, no fake results. Just automations that capture and convert leads while you sleep.",
   icons: {
-    icon: [
-      {
-        url: LOGO_DATA_URI,
-        type: "image/png",
-      },
-    ],
+    icon: "/automatex-logo.png",
   },
 };
 
