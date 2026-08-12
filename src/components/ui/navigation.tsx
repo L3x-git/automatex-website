@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { List, X, ArrowRight } from "@phosphor-icons/react";
 import { Button } from "./button";
+import { LOGO_DATA_URI } from "@/lib/logo";
 import { cn } from "@/lib/utils";
 import { BOOKING_URL } from "@/lib/contact";
 
@@ -40,11 +41,12 @@ export function Navigation() {
         <Link href="/" className="flex items-center">
           <span className="relative h-16 w-auto overflow-hidden">
             <Image
-              src="/automatex-logo.png"
+              src={LOGO_DATA_URI}
               alt="AutomateX"
               width={200}
               height={38}
               priority
+              unoptimized
               className="w-auto h-full object-contain"
             />
           </span>
